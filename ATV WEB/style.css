@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(107, 107, 107);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  width: 100%;
+  background: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.box {
+  width: 20rem;
+  height: 10rem;
+  background: yellow;
+  margin: 0.5rem;
+  border: 5px solid black;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
