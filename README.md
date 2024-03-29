@@ -1,2 +1,2 @@
 # Desenvolvimento-WEB-ATV
-Atividades realizada em sala
+Atividades da faculdade realizada em sala
