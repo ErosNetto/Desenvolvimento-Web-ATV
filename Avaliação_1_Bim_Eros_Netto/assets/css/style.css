@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  min-width: 100%;
+  background: #666464;
+  border-bottom: 1px solid black;
+}
+
+.navBar {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-esquerdo h1 a {
+  color: black;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.navbar-esquerdo {
+  display: flex;
+}
+
+.navbar-esquerdo li {
+  display: block;
+  padding: 0 2rem;
+}
+
+.navbar-esquerdo li a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-esquerdo li a:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.menu-espaco {
+  min-height: 7.4rem;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+  height: 10rem;
+  background: #666464;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #000;
+}
+
+.footer p,
+.footer p a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000;
+  transition: 0.2s ease-in-out;
+}
+
+.footer p a:hover {
+  color: green;
+}

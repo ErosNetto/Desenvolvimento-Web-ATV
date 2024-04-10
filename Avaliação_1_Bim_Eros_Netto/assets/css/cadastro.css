@@ -1,0 +1,73 @@
+.cadastro-produto-box {
+  width: 25rem;
+  height: auto;
+  padding: 2rem;
+  background: #666464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cadastro-produto-box h2 {
+  font-size: 2rem;
+  color: #000;
+}
+
+.cadastro-produto-box form {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.grup-form {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.grup-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.grup-form input[type="text"],
+.grup-form input[type="number"],
+.grup-form input[type="file"] {
+  width: 100%;
+  height: 2rem;
+  background: #fff;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  border: 2px solid #000;
+  outline: none;
+}
+
+.grup-form input:hover,
+.grup-form input:focus {
+  border-color: green;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background: rgb(0, 128, 0);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.2s ease-in-out;
+  outline: none;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+  background: rgb(2, 95, 2);
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+.container-home {
+  max-width: 130rem;
+  margin: 3rem;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-home h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.coteudo-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.produto {
+  width: 20rem;
+  height: auto;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.produto img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.produto h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.produto p {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  color: #707070;
+  font-weight: 600;
+}
+
+.produto h4 {
+  font-size: 2rem;
+  color: green;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.produto button {
+  width: 100%;
+  background: rgb(0, 128, 0);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.2s ease-in-out;
+}
+
+.produto button:hover,
+.produto button:focus {
+  background: rgb(2, 95, 2);
+  cursor: pointer;
+}

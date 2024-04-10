@@ -1,0 +1,52 @@
+.container-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 100rem;
+}
+
+.conteudo {
+  max-width: 100%;
+  border-radius: 2rem;
+  background: #202020;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+}
+
+.conteudo h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 1rem 0 2rem 0;
+}
+
+table {
+  min-width: 120rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+table td,
+table th {
+  white-space: nowrap;
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 2rem;
+  border: 0.1rem solid #fff;
+}
+
+table td {
+  background: rgb(110, 110, 110);
+}
+
+table th {
+  background: rgb(0, 0, 0);
+}
