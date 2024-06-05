@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tividade JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container-nav">
+      <nav class="navBar">
+        <div class="navbar-esquerdo">
+          <h1>Atividade JavaScript - 5,0 Pontos</h1>
+        </div>
+      </nav>
+    </div>
+
+    <div class="menu-espaco"></div>
+
+    <section class="container">
+      <div class="conteudo-tabela">
+        <h2>Membros da Equipe</h2>
+
+        <table>
+          <caption>
+            Membros da equipe
+          </caption>
+          <thead>
+            <tr>
+              <th>R.A</th>
+              <th>Nome</th>
+              <th>Turma</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2023200550</td>
+              <td>Eros Netto Antunes</td>
+              <td>1ESAN</td>
+            </tr>
+            <tr>
+              <td>2024100666</td>
+              <td>Gabriel Schultz do Amaral</td>
+              <td>1ESAN</td>
+            </tr>
+            <tr>
+              <td>2024100726</td>
+              <td>Vitor Hugo Kuerten Dechamps</td>
+              <td>1ESAN</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="conteudo-atividades">
+        <h2>Atividades</h2>
+
+        <!-- Ativdade 1 -->
+        <div class="atividade avt1">
+          <h3>1- Laço de repetição</h3>
+          <form onsubmit="event.preventDefault();">
+            <button onclick="gerarParagrafos()">Criar Paragrafos</button>
+            <button onclick="excluirParagrafos()">Excluir Paragrafos</button>
+          </form>
+          <div class="paragrafos"></div>
+        </div>
+
+        <!-- Atividade 2 -->
+        <div class="atividade atv2">
+          <h3>2- Tabuada</h3>
+          <form onsubmit="event.preventDefault();">
+            <label for="numero">Tabuada:</label>
+            <input type="number" name="numero" id="numero" min="0" />
+
+            <button onclick="gerarTabuada()">Gerar Tabuada</button>
+            <button onclick="excluirParagrafos()">Excluir Tabuada</button>
+          </form>
+          <div class="tabuada"></div>
+        </div>
+
+        <!-- Atividade 3 -->
+        <div class="atividade atv3">
+          <h3>3- Média notas</h3>
+
+          <form onsubmit="event.preventDefault();">
+            <label for="nota1">Primeira nota:</label>
+            <input type="number" name="nota1" id="nota1" min="0" />
+
+            <label for="nota2">Segunda nota:</label>
+            <input type="number" name="nota2" id="nota2" min="0" />
+
+            <label for="faltas">Quantidade de Faltas:</label>
+            <input type="number" name="faltas" id="faltas" min="0" />
+
+            <button onclick="calculaMedia()">Calcular Média</button>
+            <button onclick="limparMedia()">Limpar Média</button>
+          </form>
+          <div class="resultadoMedia"></div>
+        </div>
+
+        <!-- Atividade 4 -->
+        <div class="atividade">
+          <h3>4- Formulário</h3>
+
+          <form onsubmit="event.preventDefault();">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" />
+
+            <label for="sexo">Sexo:</label>
+            <input type="sexo" id="sexo" />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" />
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" />
+
+            <label for="trabalho">Situação de Trabalho:</label>
+            <select name="trabalho" id="trabalho">
+              <option value="">Está buscando emprego?</option>
+              <option value="yes">Sim</option>
+              <option value="no">Não</option>
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="message" id="mensagem"></textarea>
+
+            <label for="termos">Eu li e concordo com os termos de uso</label>
+            <input type="checkbox" name="termos" id="termos" />
+
+            <button onclick="enviarFormulario()">Enviar</button>
+          </form>
+        </div>
+
+        <!-- Atividade 5 -->
+        <div class="atividade">
+          <h3>5- Lista de Compras</h3>
+          <form onsubmit="event.preventDefault();">
+            <label for="produto">Nome do Produto:</label>
+            <input type="text" id="produto" required />
+
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" min="0" required />
+
+            <button type="button" onclick="adicionarItemNaLista()">
+              Adicionar Item
+            </button>
+            <button type="button" onclick="limparLista()">Limpar Lista</button>
+          </form>
+
+          <div class="listaDeCompras"></div>
+
+          <p>Total: <span id="totalDaCompra">0.00</span></p>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
